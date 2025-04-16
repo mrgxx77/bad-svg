@@ -11,18 +11,9 @@
 </head>
 <body>
     <svg width="300" height="200" viewBox="0 0 300 200">
-        <rect width="300" height="200" fill="none" stroke="#cccccc" stroke-width="5" stroke-opacity="0.5" stroke-dasharray="5" />
-        <rect width="290" height="190" x="5" y="5" fill="url(#back)" />
-
-        <!-- <rect width="300" height="100" x="0" y="70" fill="red" clip-path="url(#clip-text)" /> -->
-
-        <!-- <clipPath id="clip-text"> -->
-            <text class="bad" x="50" y="160" fill="url(#pattern)" font-family="Lobster" font-size="100" stroke="white">Bad</text>
-        <!-- </clipPath> -->
-        <text class="the" x="35" y="65" fill="#f4b400" font-family="Lobster" font-size="45" stroke="white">the Breaking</text>
-
         <defs>
             <pattern id="pattern" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+                <rect width="12" height="12" fill="#ff401a" />
                 <circle cx="3" cy="3" r="2" fill="white" />
             </pattern>
 
@@ -31,6 +22,16 @@
                 <stop offset="20%" stop-color="#b1dcf1" />
             </linearGradient>
         </defs>
+
+        <rect width="300" height="200" fill="none" stroke="#cccccc" stroke-width="5" stroke-opacity="0.5" stroke-dasharray="5" />
+        <rect width="290" height="190" x="5" y="5" fill="url(#back)" />
+
+
+        <text class="bad" x="55" y="165" fill="#000" font-family="Lobster" font-size="100" opacity="0.3">Bad</text>
+        <text class="bad" x="50" y="160" fill="url(#pattern)" font-family="Lobster" font-size="100" stroke="white">Bad</text>
+        <text class="the" x="40" y="70" fill="#000" font-family="Lobster" font-size="45" opacity="0.3">the Breaking</text>
+        <text class="the" x="35" y="65" fill="#f4b400" font-family="Lobster" font-size="45" stroke="white">the Breaking</text>
+
     </svg>
 </body>
 </html>
