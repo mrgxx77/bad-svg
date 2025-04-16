@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg width="300" height="200" viewBox="0 0 300 200">
+        <rect width="300" height="200" fill="none" stroke="#cccccc" stroke-width="5" stroke-opacity="0.5" stroke-dasharray="5" />
+        <rect width="290" height="190" x="5" y="5" fill="url(#back)" />
+
+        <!-- <rect width="300" height="100" x="0" y="70" fill="red" clip-path="url(#clip-text)" /> -->
+
+        <!-- <clipPath id="clip-text"> -->
+            <text x="50" y="160" fill="url(#pattern)" font-family="Lobster" font-size="100" stroke="white">Bad</text>
+        <!-- </clipPath> -->
+        <text x="35" y="65" fill="#f4b400" font-family="Lobster" font-size="45" stroke="white">the Breaking</text>
+
+        <defs>
+            <pattern id="pattern" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+                <circle cx="3" cy="3" r="2" fill="white" />
+            </pattern>
+
+            <linearGradient id="back" x1="0" x2="10%" spreadMethod="repeat">
+                <stop offset="50%" stop-color="#7dc4e8" /> 
+                <stop offset="20%" stop-color="#b1dcf1" />
+            </linearGradient>
+        </defs>
+    </svg>
+</body>
+</html>
