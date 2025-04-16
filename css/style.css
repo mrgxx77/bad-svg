@@ -1,3 +1,37 @@
 body{
     font-family: "Lobster", sans-serif;  
 }
+.bad{
+    animation: bad 10s infinite;
+}
+@keyframes bad{
+    0%{
+        transform: translateX(300px);
+    }
+    30%{
+        transform: translateX(0px);
+    }
+    70%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-300px);
+    }
+}
+.the{
+    animation: the 10s infinite;
+}
+@keyframes the{
+    0%{
+        transform: translateX(-300px);
+    }
+    30%{
+        transform: translateX(0px);
+    }
+    70%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
